@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="./targetx/NEF_logo_400x400_light.svg" />
+  <img src="./static/default.png" />
 </p>
 
 >This is the implentation of the ForecastOptimiser for [TARGETX](https://target-x.eu) first Open Call. (C) Lamda Networks, www.lamdanetworks.io     
@@ -15,7 +15,6 @@ After cloning the repository, there is 1 more step to do.
 ```bash
 cd ForecastOptimiser/helm
 
-# 1.
 helm install target-helm targetx-helm -n <your K8s namespace> #where <your K8s namespace> is created by kubectl create ns <your K8s namespace>
 
 ```
@@ -33,5 +32,5 @@ After the containers are up and running:
 
 >\* 💡 Info: *To build all images from their source code, you need to run sh create-containers.sh.*
 
-> \*\* 💡 Info: *To train your models using your own data (this repo does not contain the files we used for training as they are proprietary) you should you need to add the raw data in folder powerData. You will need to modify the target-trainer.py according to your data format. Finally, uncomment lines 21 and 22 of the create-containers.sh script*
+> \*\* 💡 Info: *To train your models using your own data (this repo does not contain the files we used for training as they are proprietary to TARGETX project) you should you need to add the raw data in folder powerData. You will also need to obtain the file trainer.py which provides data cleansing functionality. Contact forecastoptimiser AT lamdanetwork.io for this. 
 
