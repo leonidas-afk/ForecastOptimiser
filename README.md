@@ -8,7 +8,7 @@
 >This is the implentation of the ForecastOptimiser for [TARGETX](https://target-x.eu) first Open Call. (C) Lamda Networks, www.lamdanetworks.io     
 ## ⚙ Setup locally
 
-**Host prerequisites**: `docker`, `helm`
+**Prerequisites**: A Kubernetes deployment and devops tools like kubectl and helm
 
 After cloning the repository, there is 1 more step to do. 
 
