@@ -28,7 +28,7 @@ After the containers are up and running:
  - access the application at: (http://<IP)
  - login to the admin dashboard at: (http://<IP)
      - Default credentials: `admin` / `targetx`
-     - they can be found/changed inside pvapp/frontend/src/Home.tsx
+     - The created can be changed inside pvapp/frontend/src/Home.tsx and then the image frontend needs to be built (lines 11 and 12 of the create-containers.sh script) 
 
 
 >\* 💡 Info: *To build all images from their source code, you need to run sh create-containers.sh.*
