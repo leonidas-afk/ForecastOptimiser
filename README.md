@@ -28,10 +28,10 @@ After the containers are up and running:
  - access the application at: (http://<IP)
  - login to the admin dashboard at: (http://<IP)
      - Default credentials: `admin` / `targetx`
-     - they can be found/changed inside your `.env` file SOS
+     - they can be found/changed inside pvapp/frontend/src/Home.tsx
 
 
->\* 💡 Info: *To build all images from their source, you need to run sh create-containers.sh.*
+>\* 💡 Info: *To build all images from their source code, you need to run sh create-containers.sh.*
 
-> \*\* 💡 Info: *The shell script used at step 4 (for adding test data) uses `jq` which is a lightweight and flexible command-line JSON processor. You can install it with `apt install jq`*
+> \*\* 💡 Info: *To train your models using your own data (this repo does not contain the files we used for training as they are proprietary) you should you need to add the raw data in folder powerData. You will need to modify the target-trainer.py according to your data format. Finally, uncomment lines 21 and 22 of the create-containers.sh script*
 
