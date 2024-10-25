@@ -10,13 +10,13 @@
 
 **Host prerequisites**: `docker`, `helm`
 
-After cloning the repository, there are 1 more step to do. 
+After cloning the repository, there is 1 more step to do. 
 
 ```bash
 cd ForecastOptimiser/helm
 
 # 1.
-helm install target-helm targetx-helm -n <your K8s namespace>
+helm install target-helm targetx-helm -n <your K8s namespace> #where <your K8s namespace> is created by kubectl create ns <your K8s namespace>
 
 ```
 
