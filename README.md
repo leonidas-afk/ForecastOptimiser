@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="./static/default.png" />
+  <img src="./static/logo.png" />
 </p>
 
 >This is the implentation of the ForecastOptimiser for [TARGETX](https://target-x.eu) first Open Call. (C) Lamda Networks, www.lamdanetworks.io     
