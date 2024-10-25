@@ -1,10 +1,4 @@
-# This is to verify how it works in terms of batches
-# https://www.kaggle.com/code/ritesh7355/develop-lstm-models-for-time-series-forecasting
-#
-# edw na typwsw 4 ades me train data me tis times tous kai meta na rwthsw na
-# dw kata poso ta kserei.
-#
-#
+
 from numpy import array
 from numpy import array
 from keras.models import Sequential

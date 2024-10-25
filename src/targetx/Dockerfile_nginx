@@ -1,0 +1,23 @@
+##################
+### production ###
+##################
+
+# base image
+FROM nginx:1.26
+
+RUN apt-get clean
+RUN apt-get update
+RUN apt-get install -y vim
+
+RUN rm /etc/nginx/conf.d/default.conf
+
+
+# add default.conf
+#COPY nginx.conf /etc/nginx/conf.d
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# expose port 80
+EXPOSE 80
+
+# run nginx
+CMD ["nginx", "-g", "daemon off;"]
