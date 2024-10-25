@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: frontend
+
+    spec:
+      containers:
+
+        - name: frontend
+          image: "docker.io/lamdaleon/frontend:ff60137"
+          ports:
+            - name: http
+              containerPort: 5173
+
+          resources:
+            requests:
+              memory: "1024Mi"
+              cpu: "100m"

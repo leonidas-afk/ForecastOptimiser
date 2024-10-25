@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: localapi
+spec:
+  selector:
+    matchLabels:
+      app: localapi
+
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: localapi
+
+    spec:
+      containers:
+
+        - name: localapi
+          image: "gcr.io/privacyanalyzer-407121/localapi:dddab53"
+          ports:
+            - name: http
+              containerPort: 3000
+
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flaskweb
+spec:
+  selector:
+    matchLabels:
+      app: flaskweb
+
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: flaskweb
+
+    spec:
+      containers:
+
+        - name: flaskweb
+          image: "gcr.io/privacyanalyzer-407121/targetx-api-server:d5d5254"
+          ports:
+            - name: http
+              containerPort: 5000
+
+          resources:
+            requests:
+              memory: "1024Mi"
+              cpu: "1000m"
