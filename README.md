@@ -24,9 +24,9 @@ helm install target-helm targetx-helm -n <your K8s namespace> #where <your K8s n
 
 After the containers are up and running:
 
- - 
- - access and start playing with the Swager UI at: [localhost:8888/nef/docs](http://localhost:8888/nef/docs)
- - login to the admin dashboard at: [localhost:8888/login](http://localhost:8888/login)
+ - Obtain the <IP> address of the entrypoint service (nginx-service) with kubectl get svc nginx-ingress -o yaml -n <your K8s namespace> | grep ip
+ - access the application at: (http://<IP)
+ - login to the admin dashboard at: (http://<IP)
      - Default credentials: `admin` / `targetx`
      - they can be found/changed inside your `.env` file SOS
 
