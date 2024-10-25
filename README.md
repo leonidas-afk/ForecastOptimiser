@@ -20,7 +20,7 @@ helm install target-helm targetx-helm -n <your K8s namespace> #where <your K8s n
 
 ```
 
-### Use the application to obtain forecasts 
+### How to use the application  
 
 After the containers are up and running:
 
