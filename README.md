@@ -5,7 +5,7 @@
   <img src="./targetx/NEF_logo_400x400_light.svg" />
 </p>
 
->This is the implentation of the ForecastOptimiser for [TARGETX](https://target-x.eu)) first Open Call.    
+>This is the implentation of the ForecastOptimiser for [TARGETX](https://target-x.eu) first Open Call. (C) Lamda Networks, www.lamdanetworks.io     
 ## ⚙ Setup locally
 
 **Host prerequisites**: `docker`, `helm`
