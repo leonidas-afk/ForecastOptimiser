@@ -17,7 +17,7 @@ spec:
       containers:
 
         - name: localapi
-          image: "gcr.io/privacyanalyzer-407121/localapi:dddab53"
+          image: "docker.io/lamdaleon/localapi:cd35a05"
           ports:
             - name: http
               containerPort: 3000

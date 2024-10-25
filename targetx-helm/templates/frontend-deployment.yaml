@@ -17,7 +17,7 @@ spec:
       containers:
 
         - name: frontend
-          image: "docker.io/lamdaleon/frontend:ff60137"
+          image: "docker.io/lamdaleon/frontend:cd35a05"
           ports:
             - name: http
               containerPort: 5173
