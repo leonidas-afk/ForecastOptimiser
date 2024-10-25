@@ -23,9 +23,9 @@ helm install target-helm targetx-helm -n <your K8s namespace> #where <your K8s n
 
 After the containers are up and running:
 
- - Obtain the <IP> address of the entrypoint service (nginx-service) with kubectl get svc nginx-ingress -o yaml -n <your K8s namespace> | grep ip
- - access the application at: (http://<IP>)
- - login to the admin dashboard at: (http://<IP>)
+ - Obtain the < IP > address of the entrypoint service (nginx-service) with kubectl get svc nginx-ingress -o yaml -n <your K8s namespace> | grep ip
+ - access the application at: (http://< IP >)
+ - login to the admin dashboard at: (http://< IP >)
      - Default credentials: `admin` / `targetx`
      - The created can be changed inside pvapp/frontend/src/Home.tsx and then the image frontend needs to be built (lines 11 and 12 of the create-containers.sh script)
    - Add your domain certificate in the nginx.conf to enable SSL.
