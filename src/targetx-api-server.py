@@ -283,7 +283,7 @@ def log_request_info():
     app.logger.debug('Body: %s', request.get_data())
 
 
-@app.route("/api/dynamic_algorithm_selection", methods=['POST'])
+@app.route("/dynamic_algorithm_selection", methods=['POST'])
 def predict_on_ANY():
 
 
