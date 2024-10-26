@@ -13,7 +13,7 @@
 After cloning the repository, there is 1 more step to do. 
 
 ```bash
-cd ForecastOptimiser/helm
+cd ForecastOptimiser/
 
 helm install target-helm targetx-helm -n <your K8s namespace> #where <your K8s namespace> is created by kubectl create ns <your K8s namespace>
 
