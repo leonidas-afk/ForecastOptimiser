@@ -17,7 +17,7 @@ spec:
       containers:
 
         - name: flaskweb
-          image: "docker.io/lamdaleon/targetx-api-server:cd35a05"
+          image: "docker.io/lamdaleon/targetx-api-server:59bc8eb"
           ports:
             - name: http
               containerPort: 5000
